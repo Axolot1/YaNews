@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/news_card_style"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="2dp">
+
+    <LinearLayout style="@style/news_list_main">
+
+
+        <LinearLayout
+            android:id="@+id/news_listitem_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/news_item_margin_top"
+            android:layout_marginTop="@dimen/news_item_margin_bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/news_item_title"
+                style="@style/news_list_title"
+                tools:text="外交部：安理会有必要对朝核试作出反应" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_news_item_desc"
+                    style="@style/news_list_desc"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    tools:text="@string/test_news_desc" />
+
+                <ImageView
+                    android:id="@+id/news_item_img"
+                    android:layout_width="@dimen/news_item_img_width"
+                    android:layout_height="@dimen/news_item_img_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/news_sub_layout"
+                layout="@layout/news_list_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/news_content_padding" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

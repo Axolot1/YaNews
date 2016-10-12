@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.axolotl.yanews.customize.MultiSwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <com.axolotl.yanews.customize.EmptyRecyclerView
+                android:id="@+id/rcv_news_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray1" />
+
+            <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/net_work_error"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:visibility="gone" />
+
+            <!--<FrameLayout-->
+            <!--android:id="@+id/empty_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ProgressBar-->
+            <!--style="@style/Widget.AppCompat.ProgressBar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center" />-->
+            <!--</FrameLayout>-->
+
+        </FrameLayout>
+
+    </com.axolotl.yanews.customize.MultiSwipeRefreshLayout>
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/loadingView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:indeterminate="true" />-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="loading"-->
+    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />-->
+</FrameLayout>
+
+

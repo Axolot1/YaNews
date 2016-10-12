@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'realm-android'
+
+
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+    defaultConfig {
+        applicationId "com.axolotl.yanews"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 3
+        versionName "1.0"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+        }
+    }
+
+    buildTypes.each {
+        it.buildConfigField 'String', 'SHOW_APPID', showapi_appid
+        it.buildConfigField 'String', 'SHOW_SIGN', showapi_sign
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    //retrofit
+    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.1'
+    //stetho
+    compile 'com.facebook.stetho:stetho:1.3.1'
+    compile 'com.facebook.stetho:stetho-okhttp3:1.3.1'
+    compile 'com.uphyca:stetho_realm:0.9.0'
+    //dagger2
+    apt 'com.google.dagger:dagger-compiler:2.6.1'
+    compile 'com.google.dagger:dagger:2.6.1'
+    provided 'javax.annotation:jsr250-api:1.0'
+    //glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //rxjava
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'io.reactivex:rxjava:1.1.4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //parceler
+    compile 'org.parceler:parceler-api:1.1.1'
+    apt 'org.parceler:parceler:1.1.1'
+    compile 'com.google.android.gms:play-services:9.0.0'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    //timber
+    compile 'com.jakewharton.timber:timber:4.3.1'
+    //realm adapter
+    compile 'io.realm:android-adapters:1.3.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //premission
+    compile 'com.karumi:dexter:2.3.1'
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/news_card_style"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:id="@+id/news_item_container"
+        style="@style/news_list_main">
+
+        <TextView
+            android:id="@+id/news_item_title"
+            style="@style/news_list_title"
+            tools:text="新闻标题" />
+
+        <TextView
+            android:id="@+id/tv_news_item_desc"
+
+            style="@style/news_list_desc"
+            tools:text="@string/test_news_desc" />
+
+        <include layout="@layout/news_list_subtitle" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

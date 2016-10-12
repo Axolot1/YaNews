@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "589725487913",
+    "project_id": "yanews-143205"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589725487913:android:ec414a380d4fc72b",
+        "android_client_info": {
+          "package_name": "com.axolotl.yanews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589725487913-a3n41lpi3efdburf4fuqfomh3l9i46mq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.axolotl.yanews",
+            "certificate_hash": "BC223BBB8D96AFCBD0B093CCBA79285F127F870E"
+          }
+        },
+        {
+          "client_id": "589725487913-6f1dvd6f5u84koig9d2l2f4luga0lfv9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5Jf0MHzCG8v0B6zeWcgHQkIsfoZubdiE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

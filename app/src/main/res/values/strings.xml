@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">YaNews</string>
+    <string name="server_client_id">589725487913-6f1dvd6f5u84koig9d2l2f4luga0lfv9.apps.googleusercontent.com</string>
+    <string name="signed_in_fmt">Hello %s!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="preference_file_key">YaNews</string>
+    <string name="user_display_name_pref">user_display_name</string>
+    <string name="auth_token_pref">auth_token_pref</string>
+    <string name="news_illustration">news Illustration</string>
+    <string name="test_news_desc">"    中国外交部发言人华春莹14日在例行记者会上表示，针对当前朝鲜半岛局势，中方认为联合国安理会有必要对朝鲜核试作出进一步反应，有关反应应指向明确，主要针对朝核活动。"</string>
+    <string name="no_comments">暂无评论</string>
+    <string name="transition_google_login">transition_google_login</string>
+    <string name="need_login">请先登录</string>
+    <string name="google_login_failed">谷歌账户登录失败</string>
+    <string name="hint_comment">请输入评论内容</string>
+    <string name="submit">提交</string>
+    <string name="net_work_error">没有数据,请检查网络连接后刷新</string>
+    <string name="check_update">检查更新</string>
+    <string name="update_title">发现新版本</string>
+    <string name="check_key">checkVersion</string>
+</resources>

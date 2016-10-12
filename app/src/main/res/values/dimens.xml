@@ -1,0 +1,413 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tab_height">40dp</dimen>
+
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- NewsJet dimens -->
+    <dimen name="news_item_height">300dp</dimen>
+    <dimen name="news_item_padding_left">16dp</dimen>
+    <dimen name="news_item_padding_right">16dp</dimen>
+    <dimen name="news_item_margin_top">6dp</dimen>
+    <dimen name="news_item_margin_bottom">6dp</dimen>
+    <dimen name="news_item_title_height">70dp</dimen>
+    <dimen name="news_item_title_text_size">17sp</dimen>
+    <dimen name="news_item_subtitle_height">20dp</dimen>
+    <dimen name="news_item_subtitle_text_size">13sp</dimen>
+    <dimen name="news_item_img_width">100dp</dimen>
+    <dimen name="news_item_img_height">90dp</dimen>
+    <dimen name="news_item_separator_height">0.5dp</dimen>
+
+    <dimen name="news_item_head_img_height">160dp</dimen>
+    <dimen name="news_item_head_title_height">40dp</dimen>
+
+    <dimen name="news_item_text_title_height">60dp</dimen>
+
+    <!-- Yolo Dimens -->
+
+
+    <dimen name="navi_title_text_size">18sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_navigation_bar_height">30dp</dimen>
+
+    <!-- compatible popup menu -->
+    <dimen name="compatible_popup_menu_border">4dp</dimen>
+    <dimen name="red_dot_size">4dp</dimen>
+
+    <!-- mini control bar -->
+    <dimen name="mini_controlbar_width">48dp</dimen>
+    <dimen name="mini_controlbar_height">48dp</dimen>
+    <dimen name="mini_play_button_width">45dp</dimen>
+    <dimen name="mini_song_name_textsize">14.6sp</dimen>
+    <dimen name="mini_artist_name_textsize">10sp</dimen>
+    <dimen name="mini_next_button_width">35dp</dimen>
+    <dimen name="mini_next_button_padding_right">15dp</dimen>
+    <dimen name="mini_next_button_padding_left">8dp</dimen>
+
+    <!-- play list popup window -->
+    <dimen name="playlist_layout_titlebar_height">50dp</dimen>
+    <dimen name="playlist_layout_radio_btn_width">72dp</dimen>
+    <dimen name="playlist_layout_radio_btn_paddingtop">3dp</dimen>
+    <dimen name="playlist_layout_radio_btn_text_size">12sp</dimen>
+    <dimen name="playlist_layout_btn_playlist_cancel_height">40dp</dimen>
+    <dimen name="playlist_popup_item_height">40dp</dimen>
+    <dimen name="playlist_index_text_size">12sp</dimen>
+    <dimen name="playlist_index_margin_left">7.3dp</dimen>
+    <dimen name="playlist_index_margin_right">13.3dp</dimen>
+    <dimen name="playlist_title_text_size">13.3sp</dimen>
+    <dimen name="playlist_btn_download_width">14.6dp</dimen>
+    <dimen name="playlist_btn_download_height">13.3dp</dimen>
+    <dimen name="playlist_btn_download_margin_right">9.3dp</dimen>
+
+    <!-- slide window -->
+    <dimen name="slide_window_layout_titlebar_height">50dp</dimen>
+    <dimen name="slide_window_layout_titlebar_margin_left">9.3dp</dimen>
+    <dimen name="slide_window_layout_btn_cancel_height">40dp</dimen>
+    <dimen name="slide_window_popup_item_indicator_margin">5dp</dimen>
+    <dimen name="slide_window_popup_item_height">40dp</dimen>
+    <dimen name="slide_window_popup_item_margin_left">10dp</dimen>
+
+    <!-- player main window -->
+    <dimen name="player_toolbar_height">40dp</dimen>
+    <dimen name="player_title_textsize">17sp</dimen>
+    <dimen name="player_title_margin_top">13.3dp</dimen>
+    <dimen name="player_right_title_margin_top">10dp</dimen>
+    <dimen name="player_artist_margin_top">9.3dp</dimen>
+    <dimen name="player_button_layout_margin_top">13.3dp</dimen>
+    <dimen name="player_button_layout_margin_bottom">20dp</dimen>
+    <dimen name="player_play_button_width">53.3dp</dimen>
+    <dimen name="player_next_button_width">30.6dp</dimen>
+    <dimen name="player_next_button_margin_left">26.6dp</dimen>
+    <dimen name="player_arrow_down_width">33.3dp</dimen>
+    <dimen name="player_arrow_down_margin_right">8dp</dimen>
+    <dimen name="player_arrow_down_margin_top">19dp</dimen>
+    <dimen name="player_time_margin_left">6.6dp</dimen>
+    <dimen name="player_indicator_circle_margin">12.6dp</dimen>
+    <dimen name="player_indicator_circle_radius">2dp</dimen>
+    <!-- player 中间界面显示完整歌曲信息需要的最小dp高度, 无奈 -->
+    <dimen name="player_center_extra_height_dp">90dp</dimen>
+    <dimen name="player_lyric_height">32dp</dimen>
+    <dimen name="player_lyric_size">14dp</dimen>
+
+    <!-- download -->
+    <dimen name="downloading_btn_container_height">40dp</dimen>
+    <dimen name="downloading_btn_padding_horizon">5dp</dimen>
+    <dimen name="downloading_btn_padding_vertical">8dp</dimen>
+    <dimen name="downloading_resume_all_img_margin_left">5dp</dimen>
+    <dimen name="downloading_resume_all_text_margin_left">6.66dp</dimen>
+    <dimen name="downloading_pause_all_img_margin_left">18.66dp</dimen>
+    <dimen name="downloading_pause_all_text_margin_left">6.66dp</dimen>
+    <dimen name="downloading_delete_all_img_margin_right">10.66dp</dimen>
+    <dimen name="downloading_item_padding_top">6dp</dimen>
+    <dimen name="downloading_item_padding_bottom">6dp</dimen>
+    <dimen name="downloading_item_margin_left">11dp</dimen>
+    <dimen name="downloading_item_margin_right">10dp</dimen>
+    <dimen name="downloading_name_text_size">14.66dp</dimen>
+    <dimen name="downloading_progress_height">3dp</dimen>
+    <dimen name="downloading_progress_margin_top">8dp</dimen>
+    <dimen name="downloading_speed_margin_top">6dp</dimen>
+    <dimen name="downloading_speed_text_size">10.66dp</dimen>
+    <dimen name="downloading_btn_width">48dp</dimen>
+    <dimen name="downloading_btn_img_width">32dp</dimen>
+    <dimen name="downloading_btn_img_height">32dp</dimen>
+    <dimen name="downloaded_item_height">49.33dp</dimen>
+    <dimen name="downloaded_item_margin_left">10dp</dimen>
+    <dimen name="downloaded_item_btn_margin_right">13.33dp</dimen>
+    <dimen name="downloaded_song_text_size">14.66dp</dimen>
+    <dimen name="downloaded_artist_margin_top">8dp</dimen>
+    <dimen name="downloaded_artist_text_size">10.66dp</dimen>
+    <dimen name="download_notification_padding_horizon">3dp</dimen>
+
+    <!-- local header -->
+    <dimen name="local_sldingtab_height">34dp</dimen>
+    <dimen name="local_header_height">36dp</dimen>
+
+    <!-- local side selector -->
+    <dimen name="local_side_selector_txt_size">9dp</dimen>
+
+    <!-- PopupMenu -->
+    <dimen name="popupmenu_item_textsize">13.5dp</dimen>
+    <dimen name="popupmenu_item_width">120dp</dimen>
+    <dimen name="popupmenu_item_height">36dp</dimen>
+    <dimen name="popupmenu_item_self_padding">9.33dp</dimen>
+    <dimen name="popupmenu_divider_height">1dp</dimen>
+
+    <!-- local songs list title -->
+    <dimen name="local_list_title_height">37.3dp</dimen>
+    <dimen name="local_list_title_playall_icon_left_padding">10dp</dimen>
+    <dimen name="local_list_title_playall_icon_right_padding">6.6dp</dimen>
+    <dimen name="local_list_title_playall_text_size">14sp</dimen>
+    <dimen name="local_list_title_song_num_text_size">11sp</dimen>
+    <dimen name="local_list_title_song_num_margin_right">10dp</dimen>
+
+    <!-- local songs list -->
+    <dimen name="local_item_height">53.3dp</dimen>
+    <dimen name="local_item_album_size">42.67dp</dimen>
+    <dimen name="local_item_left_edge">10dp</dimen>
+    <dimen name="local_item_arrow_right_padding">12dp</dimen>
+    <dimen name="local_item_indicator_height">13.3dp</dimen>
+    <dimen name="local_item_indicator_width">13.3dp</dimen>
+    <dimen name="local_item_line1_height">24dp</dimen>
+
+    <dimen name="manage_item_checkbox_margin_left">10dp</dimen>
+    <dimen name="manage_item_checkbox_textsize">12sp</dimen>
+    <dimen name="manege_bottom_height">53.33dp</dimen>
+    <dimen name="manage_bottom_textsize">14.66sp</dimen>
+    <dimen name="manage_bottom_icon_size">15dp</dimen>
+    <dimen name="manage_bottom_img_margin_right">6.66dp</dimen>
+
+    <!-- setting -->
+    <dimen name="setting_left_right_padding">10dp</dimen>
+    <dimen name="setting_group_height">26dp</dimen>
+    <dimen name="setting_item_height">42dp</dimen>
+    <dimen name="setting_group_text_size">10dp</dimen>
+    <dimen name="setting_item_text_size">14dp</dimen>
+    <dimen name="setting_item_content_text_size">12dp</dimen>
+    <dimen name="setting_set_default_title_margin_top">20dp</dimen>
+    <dimen name="setting_set_default_img_margin_top">40dp</dimen>
+    <dimen name="setting_set_default_btn_margin_top">40dp</dimen>
+
+    <dimen name="local_item_index_height">20dp</dimen>
+    <dimen name="local_item_index_textsize">12sp</dimen>
+    <dimen name="local_item_drawer_height">50.6dp</dimen>
+    <dimen name="music_drawer_divider_margintop">10.6dp</dimen>
+    <dimen name="music_drawer_divider_marginbottom">9.3dp</dimen>
+    <dimen name="music_drawer_icon_width">20.6dp</dimen>
+    <dimen name="music_drawer_icon_height">20dp</dimen>
+    <dimen name="music_drawer_txt_textsize">11sp</dimen>
+    <dimen name="music_drawer_icon_margintop">7dp</dimen>
+
+    <!-- floating window -->
+    <dimen name="floating_window_width">120dp</dimen>
+    <dimen name="floating_window_padding">10dp</dimen>
+    <dimen name="float_mini_logo_width">29dp</dimen>
+    <dimen name="float_title_text_size">12sp</dimen>
+    <dimen name="float_mini_play_width">23.3dp</dimen>
+    <dimen name="float_mini_close_width">12.5dp</dimen>
+    <dimen name="float_title_margin_top">5.3dp</dimen>
+    <dimen name="float_position_margin_top">6dp</dimen>
+    <dimen name="float_mini_play_margin_top">8dp</dimen>
+
+    <!-- shalog -->
+    <integer name="enterfadeduration">150</integer>
+    <integer name="exitfadeduration">200</integer>
+
+    <dimen name="shalog_btn_selector_radius">20dp</dimen>
+
+    <!-- splash -->
+    <dimen name="splash_icon_margin_top">112dp</dimen>
+    <dimen name="splash_icon_size">128dp</dimen>
+    <dimen name="splash_title_margin_top">33.33dp</dimen>
+    <dimen name="splash_title_text_size">21.33dp</dimen>
+    <dimen name="splash_sub_title_margin_top">8dp</dimen>
+    <dimen name="splash_sub_title_text_size">12dp</dimen>
+    <dimen name="splash_copyright_margin_bottom">33.33dp</dimen>
+    <dimen name="splash_bottom_text_size">9.33dp</dimen>
+
+    <!-- guide -->
+    <dimen name="guide_page_img_margin_top">42dp</dimen>
+    <dimen name="guide_page_title_margin_top">15dp</dimen>
+    <dimen name="guide_page_title_text_size">25dp</dimen>
+    <dimen name="guide_page_sub_title_margin_top">16dp</dimen>
+    <dimen name="guide_page_sub_title_text_size">15dp</dimen>
+    <dimen name="guide_page_indicator_margin_bottom">20dp</dimen>
+    <dimen name="guide_last_page_try_margin_top">38dp</dimen>
+    <dimen name="guide_last_page_try_text_size">30dp</dimen>
+    <dimen name="guide_last_page_music_title_margin_top">5dp</dimen>
+    <dimen name="guide_last_page_music_title_text_size">15dp</dimen>
+    <dimen name="guide_last_page_download_btn_margin_top">16dp</dimen>
+    <dimen name="guide_last_page_skip_margin_bottom">48dp</dimen>
+    <dimen name="guide_last_page_skip_text_size">15dp</dimen>
+    <dimen name="guide_last_page_skip_img_margin_left">3dp</dimen>
+
+    <!-- equalizer -->
+    <dimen name="equalizer_title_img_margin_left">10dp</dimen>
+    <dimen name="equalizer_title_text_size">16dp</dimen>
+    <dimen name="equalizer_title_height">50.66dp</dimen>
+    <dimen name="equalizer_item_padding_left">10dp</dimen>
+    <dimen name="equalizer_item_padding_top">5.33dp</dimen>
+    <dimen name="equalizer_item_padding_bottom">5.33dp</dimen>
+    <dimen name="equalizer_item_padding_right">10dp</dimen>
+    <dimen name="equalizer_item_sub_title_margin_top">2.66dp</dimen>
+    <dimen name="equalizer_item_height">50.66dp</dimen>
+
+    <dimen name="equalizer_bottom_bar_height">40dp</dimen>
+    <dimen name="equalizer_cancle_text_size">13.33dp</dimen>
+
+    <!-- new mine -->
+    <dimen name="new_mine_block_bg_shadow_width">2.67dp</dimen>
+    <dimen name="new_mine_block_title_text">15dp</dimen>
+    <dimen name="new_mine_block_num_text">9sp</dimen>
+
+    <!-- homepage -->
+    <dimen name="loading_margin_top">140dp</dimen>
+    <dimen name="toplayout_padding">10dp</dimen>
+    <dimen name="toplayout_desc_padding">8dp</dimen>
+    <dimen name="popular_chart_title_textsize">16sp</dimen>
+    <dimen name="popular_chart_desc_textsize">12sp</dimen>
+    <dimen name="popular_chart_no_textsize">9sp</dimen>
+    <dimen name="popular_chart_no_width">12dp</dimen>
+    <dimen name="album_radio_group_cornor_radius">2dp</dimen>
+    <dimen name="download_btn_width">26.67dp</dimen>
+    <dimen name="download_btn_height">26.67dp</dimen>
+
+    <!-- lyric -->
+    <dimen name="lyric_text_size">16dp</dimen>
+    <dimen name="lyric_line_space">12dp</dimen>
+    <dimen name="lyric_padding_top">26.6dp</dimen>
+    <dimen name="lyric_padding_bottom">37.3dp</dimen>
+    <dimen name="lyric_padding_left_right">8dp</dimen>
+    <dimen name="lyric_question_btn_width">20dp</dimen>
+    <!-- lyric fail and report -->
+    <dimen name="lyric_fail_text_size">19sp</dimen>
+    <dimen name="lyric_tips_textview_text_size">13.3sp</dimen>
+    <dimen name="download_title_padding">40dp</dimen>
+    <dimen name="lyric_fail_line_width">1px</dimen>
+    <dimen name="lyric_net_text_size">13.3sp</dimen>
+    <dimen name="lyric_fail_line_margin">6.6dp</dimen>
+    <dimen name="lyric_fail_line_length">20dp</dimen>
+    <dimen name="lyric_fail_margin_top">30dp</dimen>
+    <dimen name="lyric_fail_tips_margin_top">26.6dp</dimen>
+    <dimen name="lyric_fail_netlayout_margin_top">8dp</dimen>
+    <dimen name="lyric_fail_netlayout_width">240dp</dimen>
+    <dimen name="lyric_net_icon_margin_top">20dp</dimen>
+    <dimen name="lyric_net_text_margin_top">13.3dp</dimen>
+    <dimen name="lyric_net_toggle_margin_bottom">13.3dp</dimen>
+    <dimen name="lyric_net_divider_width">1dp</dimen>
+    <dimen name="lyric_net_divider_height">93.3dp</dimen>
+    <dimen name="lyric_report_btn_margin_top">45dp</dimen>
+    <dimen name="lyric_airplane_layout_margin_top">9.3dp</dimen>
+    <dimen name="lyric_airplane_layout_width">167dp</dimen>
+    <dimen name="lyric_airplane_icon_margin_top">20dp</dimen>
+    <dimen name="lyric_airplane_btn_magrgin_top">9.3dp</dimen>
+    <dimen name="lyric_airplane_btn_text_size">13sp</dimen>
+    <dimen name="lyric_report_btn_left_padding">10dp</dimen>
+    <dimen name="lyric_report_btn_top_padding">7dp</dimen>
+    <!-- player detail -->
+    <dimen name="player_detail_margin_bottom">15dp</dimen>
+    <dimen name="player_detail_item_height">42.66dp</dimen>
+    <dimen name="player_detail_icon_width">28dp</dimen>
+    <dimen name="player_detail_label_width">50dp</dimen>
+    <dimen name="player_detail_label_margin_left">13.33dp</dimen>
+    <dimen name="player_detail_button_padding">13.33dp</dimen>
+    <dimen name="player_detail_separator_height">1px</dimen>
+    <dimen name="player_recommend_item_padding_left">13.33dp</dimen>
+    <dimen name="player_recommend_item_padding_top">9.33dp</dimen>
+    <dimen name="player_recommend_icon_width">42.66dp</dimen>
+    <dimen name="player_recommend_icon_height">42.66dp</dimen>
+    <dimen name="player_recommend_title_margin_left">9.33dp</dimen>
+    <dimen name="player_recommend_button_padding">13.33dp</dimen>
+
+    <dimen name="player_detail_title_textsize">17.33px</dimen>
+    <dimen name="player_detail_label_textsize">13.33px</dimen>
+    <dimen name="player_recommend_like_textsize">10.66px</dimen>
+    <dimen name="player_recommend_item_textsize">13.33px</dimen>
+
+    <!-- lockscrren -->
+    <dimen name="lockscreen_title_margin_left">20dp</dimen>
+    <dimen name="lockscreen_title_margin_top">15dp</dimen>
+    <dimen name="lockscreen_artist_margin_top">2dp</dimen>
+    <dimen name="lockscreen_title_textsize">19sp</dimen>
+    <dimen name="lockscreen_artist_textsize">12sp</dimen>
+    <dimen name="lockscreen_btn_size">38.6dp</dimen>
+    <dimen name="lockscreen_btn_area_margin_top">20dp</dimen>
+    <dimen name="lockscreen_btn_margin_left">26.6dp</dimen>
+    <dimen name="lockscreen_unlock_margin_bottom">20dp</dimen>
+    <dimen name="lockscreen_cover_topshadow_height">173.3dp</dimen>
+    <dimen name="lockscreen_cover_bottomshadow_height">80dp</dimen>
+    <dimen name="lockscreen_time_margin_top">30.6dp</dimen>
+    <dimen name="lockscreen_time_margin_left">20dp</dimen>
+    <dimen name="lockscreen_date_textsize">13sp</dimen>
+    <dimen name="lockscreen_time_textsize">36sp</dimen>
+
+    <!--scan-->
+    <dimen name="scan_btn_width">93dp</dimen>
+    <dimen name="scan_btn_height">32dp</dimen>
+    <dimen name="scan_btn_margin_top">13.33dp</dimen>
+    <dimen name="scan_anim_r">186dp</dimen>
+    <dimen name="scan_path_textsize">10.67dp</dimen>
+    <dimen name="scan_btn_text_size">14.67dp</dimen>
+    <dimen name="scan_result_margin_top">8.67dp</dimen>
+    <dimen name="scan_progress_height">24dp</dimen>
+    <dimen name="scan_path_margin_left">8dp</dimen>
+    <dimen name="scan_radar_margin_top">8dp</dimen>
+
+    <dimen name="player_title_margin_left">8dp</dimen>
+    <dimen name="player_title_margin_right">34dp</dimen>
+
+    <!-- new main -->
+    <dimen name="main_menu_width">38dp</dimen>
+    <dimen name="main_menu_padding_left">10dp</dimen>
+    <dimen name="red_dot_margin_top">12.6dp</dimen>
+    <dimen name="red_dot_margin_right">4dp</dimen>
+    <dimen name="main_search_width">37.3dp</dimen>
+    <dimen name="main_allsong_height">100dp</dimen>
+    <dimen name="all_song_icon_margin_left">10dp</dimen>
+    <dimen name="all_song_logo_margintop">25.3dp</dimen>
+    <dimen name="main_general_item_height">56.6dp</dimen>
+    <dimen name="main_download_icon_margin_left">21.3dp</dimen>
+    <dimen name="main_download_text_margin_left">56dp</dimen>
+    <dimen name="main_musiclib_right_enter_margin_right">13.3dp</dimen>
+    <dimen name="main_musiclib_online_margin_left">2dp</dimen>
+    <dimen name="main_musiclib_divide_margin_left">5dp</dimen>
+    <dimen name="main_musiclib_divide_margin_top">2dp</dimen>
+    <dimen name="all_song_num_text_size">9sp</dimen>
+    <dimen name="main_playlist_header_title_textsize">12sp</dimen>
+    <dimen name="main_playlist_width">35dp</dimen>
+    <dimen name="main_playlist_margin_left">10dp</dimen>
+    <dimen name="main_playlist_divide_margin_left">62dp</dimen>
+
+    <dimen name="tab_indicator_height">2dp</dimen>
+    <dimen name="indexer_margin_bottom">48dp</dimen>
+    <dimen name="laoding_view_text_margintop">4dp</dimen>
+    <dimen name="divider_height">0.3dp</dimen>
+
+    <!-- theme -->
+    <!--     <dimen name="theme_item_width">93.33dp</dimen> -->
+    <!--     <dimen name="theme_item_height">154.66dp</dimen> -->
+    <dimen name="theme_item_spacing_vertical">2dp</dimen>
+    <dimen name="theme_item_spacing_horizonal">2dp</dimen>
+    <dimen name="theme_checked_margin_right">6.67dp</dimen>
+    <dimen name="theme_checked_margin_bottom">6.67dp</dimen>
+    <dimen name="theme_progress_bar_height">20.67dp</dimen>
+
+    <!-- Shalog -->
+    <dimen name="shalog_width">225dp</dimen>
+    <dimen name="shalog_margin_horizon">40dp</dimen>
+    <dimen name="shalog_padding_left">16dp</dimen>
+    <dimen name="shalog_titlebar_height">40dp</dimen>
+    <dimen name="shalog_top_space_height">16.66dp</dimen>
+    <dimen name="shalog_icon_margin_right">5.33dp</dimen>
+    <dimen name="shalog_title_textsize">16sp</dimen>
+    <dimen name="shalog_icon_width">16dp</dimen>
+    <dimen name="shalog_icon_height">16dp</dimen>
+    <dimen name="shalog_content_textsize">14.66sp</dimen>
+    <dimen name="shalog_desc_textsize">12sp</dimen>
+    <dimen name="shalog_checkbox_margin_top">6dp</dimen>
+    <dimen name="shalog_checkbox_icon_width">13.33dp</dimen>
+    <dimen name="shalog_checkbox_icon_height">13.33dp</dimen>
+    <dimen name="shalog_checkbox_icon_margin_left">6dp</dimen>
+    <dimen name="shalog_bottombar_height">36dp</dimen>
+    <dimen name="shalog_bottom_space_height">16.66dp</dimen>
+    <dimen name="shalog_button_textsize">16sp</dimen>
+    <dimen name="shalog_listview_height">200dp</dimen>
+    <dimen name="shalog_listitem_height">46.66dp</dimen>
+    <dimen name="shalog_listitem_icon_width">33.33dp</dimen>
+    <dimen name="shalog_listitem_icon_height">33.33dp</dimen>
+    <dimen name="shalog_listitem_icon_margin_left">16dp</dimen>
+    <dimen name="shalog_listitem_icon_margin_top">6.66dp</dimen>
+    <dimen name="shalog_listitem_icon_margin_right">13.33dp</dimen>
+    <dimen name="shalog_listitem_icon_margin_bottom">6.66dp</dimen>
+
+    <dimen name="new_mine_big_divider_height">6.6dp</dimen>
+
+    <dimen name="sound_enhance_item_width">80dp</dimen>
+    <dimen name="sound_enhance_item__name_text">13dp</dimen>
+    <dimen name="news_content_padding">4dp</dimen>
+
+
+</resources>
