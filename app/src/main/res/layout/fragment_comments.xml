@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.axolotl.yanews.customize.MultiSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.axolotl.yanews.customize.ScrollChildSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/refresh"
     android:layout_width="match_parent"
@@ -22,10 +22,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:visibility="gone"
             android:text="@string/no_comments"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
     </FrameLayout>
 
-</com.axolotl.yanews.customize.MultiSwipeRefreshLayout>
+</com.axolotl.yanews.customize.ScrollChildSwipeRefreshLayout>
 
 

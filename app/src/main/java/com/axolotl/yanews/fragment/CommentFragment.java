@@ -1,6 +1,7 @@
 package com.axolotl.yanews.fragment;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -14,15 +15,10 @@ import com.axolotl.yanews.R;
 import com.axolotl.yanews.YaNewApp;
 import com.axolotl.yanews.adapter.CommentAdapter;
 import com.axolotl.yanews.customize.EmptyRecyclerView;
-import com.axolotl.yanews.customize.MultiSwipeRefreshLayout;
-import com.axolotl.yanews.event.RefreshComment;
+import com.axolotl.yanews.customize.ScrollChildSwipeRefreshLayout;
 import com.axolotl.yanews.retrofit.OauthClient;
 import com.axolotl.yanews.retrofit.entity.Comment;
 import com.axolotl.yanews.retrofit.entity.CommentRes;
-
-import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.List;
 
@@ -46,7 +42,7 @@ public class CommentFragment extends Fragment implements SwipeRefreshLayout.OnRe
     @BindView(R.id.rcv_news_comments)
     EmptyRecyclerView rcvNewsComments;
     @BindView(R.id.refresh)
-    MultiSwipeRefreshLayout refresh;
+    ScrollChildSwipeRefreshLayout refresh;
     @BindView(R.id.tv_empty)
     TextView tvEmpty;
 
@@ -82,7 +78,7 @@ public class CommentFragment extends Fragment implements SwipeRefreshLayout.OnRe
         rcvNewsComments.setLayoutManager(new LinearLayoutManager(getContext()));
         rcvNewsComments.setAdapter(mAdapter);
         rcvNewsComments.setEmptyView(tvEmpty);
-        refresh.setSwipeableChildren(R.id.rcv_news_comments, R.id.tv_empty);
+        refresh.setScrollUpChild(rcvNewsComments);
         return v;
     }
 
@@ -96,6 +92,12 @@ public class CommentFragment extends Fragment implements SwipeRefreshLayout.OnRe
     @Override
     public void onResume() {
         super.onResume();
+        refresh.post(new Runnable() {
+            @Override
+            public void run() {
+                refresh.setRefreshing(true);
+            }
+        });
         requestComments();
         Timber.d("comment fra onResume");
     }
