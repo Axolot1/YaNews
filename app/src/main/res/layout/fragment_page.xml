@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.axolotl.yanews.customize.MultiSwipeRefreshLayout
+    <com.axolotl.yanews.customize.ScrollChildSwipeRefreshLayout
         android:id="@+id/refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -28,34 +28,10 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:visibility="gone" />
 
-            <!--<FrameLayout-->
-            <!--android:id="@+id/empty_view"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent">-->
-
-            <!--<ProgressBar-->
-            <!--style="@style/Widget.AppCompat.ProgressBar"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center" />-->
-            <!--</FrameLayout>-->
-
         </FrameLayout>
 
-    </com.axolotl.yanews.customize.MultiSwipeRefreshLayout>
+    </com.axolotl.yanews.customize.ScrollChildSwipeRefreshLayout>
 
-    <!--<ProgressBar-->
-    <!--android:id="@+id/loadingView"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_gravity="center"-->
-    <!--android:indeterminate="true" />-->
-    <!--<TextView-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_gravity="center"-->
-    <!--android:text="loading"-->
-    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />-->
 </FrameLayout>
 
 

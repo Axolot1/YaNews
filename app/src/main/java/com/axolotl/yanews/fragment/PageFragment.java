@@ -9,7 +9,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.axolotl.yanews.DetailActivity;
@@ -17,7 +16,7 @@ import com.axolotl.yanews.R;
 import com.axolotl.yanews.YaNewApp;
 import com.axolotl.yanews.adapter.NewsListAdapter;
 import com.axolotl.yanews.customize.EmptyRecyclerView;
-import com.axolotl.yanews.customize.MultiSwipeRefreshLayout;
+import com.axolotl.yanews.customize.ScrollChildSwipeRefreshLayout;
 import com.axolotl.yanews.dagger.DaggerPageComponent;
 import com.axolotl.yanews.dagger.PageFraModule;
 import com.axolotl.yanews.event.NetWorkError;
@@ -46,14 +45,11 @@ public class PageFragment extends Fragment implements NewsListAdapter.OnItemClic
     private static final String BUNDLE_RECYCLER_LAYOUT = "classname.recycler.layout";
 
 
-    //第一次通知一定为0
-    private boolean first = true;
-
 
     @BindView(R.id.rcv_news_list)
     EmptyRecyclerView mRcvNewsList;
     @BindView(R.id.refresh)
-    MultiSwipeRefreshLayout refresh;
+    ScrollChildSwipeRefreshLayout refresh;
     @BindView(R.id.empty_view)
     View emptyView;
 
@@ -108,9 +104,10 @@ public class PageFragment extends Fragment implements NewsListAdapter.OnItemClic
                 mPresenter.refreshList();
             }
         });
-        refresh.setSwipeableChildren(R.id.rcv_news_list, R.id.empty_view);
+        refresh.setScrollUpChild(mRcvNewsList);
         return view;
     }
+
 
 
     @Override
@@ -171,11 +168,12 @@ public class PageFragment extends Fragment implements NewsListAdapter.OnItemClic
     }
 
     public void showData(RealmResults<News> newses) {
-        if ((newses == null || newses.size() == 0) && first) {
-            first = false;
-            return;
-        }
+//        if ((newses == null || newses.size() == 0) && first) {
+//            first = false;
+//            return;
+//        }
         mAdapter.setupData(newses);
+        refresh.setRefreshing(false);
         if (mSavedRecyclerLayoutState != null) {
             mRcvNewsList.getLayoutManager().onRestoreInstanceState(mSavedRecyclerLayoutState);
         }

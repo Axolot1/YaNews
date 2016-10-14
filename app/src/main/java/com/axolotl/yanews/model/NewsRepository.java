@@ -51,7 +51,7 @@ public class NewsRepository implements Closeable {
         // Return the data in Realm. The query result will be automatically updated when the network requests
         // save data in Realm
         return realm.where(News.class).equalTo(News.CHANNELID, channelId)
-                .findAllSortedAsync(News.PUB_DATE, Sort.DESCENDING)
+                .findAllSorted(News.PUB_DATE, Sort.DESCENDING)
                 .asObservable();
     }
 

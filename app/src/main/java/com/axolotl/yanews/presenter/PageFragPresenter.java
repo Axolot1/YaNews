@@ -44,6 +44,7 @@ public class PageFragPresenter {
                 .subscribe(new Action1<RealmResults<News>>() {
                     @Override
                     public void call(RealmResults<News> newses) {
+                        Timber.d("newses size : %d", newses.size());
                         mView.showData(newses);
                     }
                 }, new Action1<Throwable>() {
